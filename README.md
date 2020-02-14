@@ -1,8 +1,6 @@
 [![Actions Status](https://github.com/amaurymartiny/now-middleware/workflows/CI/badge.svg)](https://github.com/amaurymartiny/now-middleware/actions)
 [![npm (scoped)](https://img.shields.io/npm/v/@amaurymartiny/now-middleware.svg)](https://www.npmjs.com/package/@amaurymartiny/now-middleware)
 [![dependencies Status](https://david-dm.org/amaurymartiny/now-middleware/status.svg)](https://david-dm.org/amaurymartiny/now-middleware)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@amaurymartiny/now-middleware.svg)
-![npm bundle size](https://img.shields.io/bundlephobia/min/@amaurymartiny/now-middleware.svg)
 [![Buy me a tree](https://img.shields.io/badge/Buy%20me%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://offset.earth/amaurymartiny)
 
 <br /><br /><br />
