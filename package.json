@@ -16,7 +16,7 @@
     "build": "rimraf lib/ && tsc",
     "deploy": "yarn build && standard-version",
     "lint": "tsc --noEmit && eslint . --ext ts",
-    "test": "Echo Skipped for now."
+    "test": "echo Skipped for now."
   },
   "dependencies": {
     "@types/express": "^4.17.2",
