@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/amaurymartiny/now-middleware.svg?branch=master)](https://travis-ci.org/amaurymartiny/now-middleware)
+[![Actions Status](https://github.com/amaurymartiny/now-middleware/workflows/CI/badge.svg)](https://github.com/amaurymartiny/now-middleware/actions)
 [![npm (scoped)](https://img.shields.io/npm/v/@amaurymartiny/now-middleware.svg)](https://www.npmjs.com/package/@amaurymartiny/now-middleware)
 [![dependencies Status](https://david-dm.org/amaurymartiny/now-middleware/status.svg)](https://david-dm.org/amaurymartiny/now-middleware)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@amaurymartiny/now-middleware.svg)
@@ -8,7 +8,7 @@
 <br /><br /><br />
 
 <h1 align="center">now-middleware</h1>
-<h4 align="center">Use Express middlewares with ZEIT Now serverless functions.</h4>
+<h4 align="center">Chain Express middlewares with ZEIT Now serverless functions.</h4>
 
 <br /><br /><br />
 

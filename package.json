@@ -2,7 +2,7 @@
   "name": "@amaurymartiny/now-middleware",
   "version": "0.1.0",
   "author": "Amaury Martiny <amaury.martiny@protonmail.com>",
-  "description": "Use Express middlewares with ZEIT Now serverless functions",
+  "description": "Chain Express middlewares with ZEIT Now serverless functions",
   "files": [
     "/lib"
   ],
