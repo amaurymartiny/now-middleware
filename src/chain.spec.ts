@@ -40,7 +40,7 @@ describe('chain', () => {
 
     const req = { headers: {} } as NowRequest;
     const res = ({
-      send: jest.fn()
+      send: jest.fn(),
     } as unknown) as NowResponse;
 
     chain(dummyMiddleware)(dummyHandler)(req, res);
