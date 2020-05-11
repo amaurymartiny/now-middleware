@@ -6,7 +6,7 @@
 <br /><br /><br />
 
 <h1 align="center">now-middleware</h1>
-<h4 align="center">Chain Express middlewares with ZEIT Now serverless functions.</h4>
+<h4 align="center">Chain Express middlewares with Vercel Serverless Functions.</h4>
 
 <br /><br /><br />
 
@@ -39,5 +39,5 @@ export default chain(cors(), morgan('common'))(handler);
 
 ## Learn More
 
-- ZEIT Now serverless functions: https://zeit.co/docs/v2/serverless-functions/introduction
+- Vercel Serverless Functions: https://vercel.com/docs/v2/serverless-functions/introduction
 - Express middlewares: https://expressjs.com/en/guide/using-middleware.html
