@@ -22,7 +22,7 @@ The package exposes one `chain` function.
 
 ```typescript
 import { chain } from '@amaurymartiny/now-middleware';
-import { NowRequest, NowResponse } from '@now/node';
+import { NowRequest, NowResponse } from '@vercel/node';
 
 // Import a couple of Express middlewares
 import cors from 'cors'; // Enable cross-origin resource sharing (CORS) with various options

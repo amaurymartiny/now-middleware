@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import { NowRequest, NowResponse } from '@now/node';
+import { NowRequest, NowResponse } from '@vercel/node';
 import {
   ErrorRequestHandler,
   NextFunction,
@@ -75,7 +75,7 @@ function combineMiddleware(
 }
 
 /**
- * Chain middlewares together, and expose them to be consumed by a `@now/node`
+ * Chain middlewares together, and expose them to be consumed by a `@vercel/node`
  * serverless function.
  *
  * @param middlewares - Functions of form: `function(req, res, next) { ... }`, aka
