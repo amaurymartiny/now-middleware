@@ -681,9 +681,9 @@
     tsutils "^3.17.1"
 
 "@vercel/node@^1.6.1":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.7.4.tgz#855e184e0467f8b5cd6922b33c9c5a4355788555"
-  integrity sha512-5pBaNJYnuO0HQhsncp7uk7Hl8NKhEldRPdUwlgjIvmwtggcssQB7hGVRGYpBXj3nSnQXtf35PSw17r2Xjk3zRA==
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.8.1.tgz#aa0a04f425638874d19be64f7905018ef6f9b1c5"
+  integrity sha512-vQsYMrulghMaHEKbqxJCQPfHrGEBmYmQMLYrx+m8kolKDq1LQDWFx2MRh4DyMnGfYSoYoW5PI2HP7NAfbEjzmg==
   dependencies:
     "@types/node" "*"
     ts-node "8.9.1"
