@@ -14,8 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import { NowRequest, NowResponse } from '@vercel/node';
-import { NextFunction, Request, Response } from 'express';
+import type { NowRequest, NowResponse } from '@vercel/node';
+import type { NextFunction, Request, Response } from 'express';
 
 import { chain } from './chain';
 

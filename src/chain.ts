@@ -14,8 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-import { NowRequest, NowResponse } from '@vercel/node';
-import {
+import type { NowRequest, NowResponse } from '@vercel/node';
+import type {
   ErrorRequestHandler,
   NextFunction,
   Request,
