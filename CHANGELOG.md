@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/amaurymartiny/now-middleware/compare/v0.2.0...v0.2.1) (2020-09-20)
+
+
+### Bug Fixes
+
+* move `express` and `@types/express` to devDependencies ([#67](https://github.com/amaurymartiny/now-middleware/issues/67)) ([5a0231e](https://github.com/amaurymartiny/now-middleware/commit/5a0231e2cb63b3539b3c6168b6a3c53861b30508))
+
 ## [0.2.0](https://github.com/amaurymartiny/now-middleware/compare/v0.1.2...v0.2.0) (2020-05-30)
 
 
