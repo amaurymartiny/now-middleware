@@ -1,5 +1,5 @@
-// @amaurymartiny/now-middleware
-// Copyright (C) 2020 Amaury Martiny
+// @amaurym/now-middleware
+// Copyright (C) 2020-2021 Amaury
 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -16,11 +16,11 @@
 
 import type { NowRequest, NowResponse } from '@vercel/node';
 import type {
-  ErrorRequestHandler,
-  NextFunction,
-  Request,
-  RequestHandler,
-  Response,
+	ErrorRequestHandler,
+	NextFunction,
+	Request,
+	RequestHandler,
+	Response,
 } from 'express';
 
 type AsyncVoid = void | Promise<void>;
@@ -31,31 +31,31 @@ type AsyncVoid = void | Promise<void>;
 export type NowFunction<Req, Res> = (req: Req, res: Res) => AsyncVoid;
 
 function reduceMiddleware(
-  acc: RequestHandler,
-  mid: RequestHandler | ErrorRequestHandler
+	acc: RequestHandler,
+	mid: RequestHandler | ErrorRequestHandler
 ): RequestHandler {
-  return function (req: Request, res: Response, next: NextFunction): void {
-    acc(req, res, (err) => {
-      if (err) {
-        if (mid.length === 4) {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-          // @ts-ignore
-          return mid(err, req, res, next);
-        }
-        return next(err);
-      }
-      if (mid.length === 4) {
-        return next();
-      }
-      try {
-        // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-        // @ts-ignore
-        mid(req, res, next, undefined);
-      } catch (e) {
-        next(e);
-      }
-    });
-  };
+	return function (req: Request, res: Response, next: NextFunction): void {
+		acc(req, res, (err: string) => {
+			if (err) {
+				if (mid.length === 4) {
+					// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+					// @ts-ignore FIXME If anyone knows how to fix this...
+					return mid(err, req, res, next);
+				}
+				return next(err);
+			}
+			if (mid.length === 4) {
+				return next();
+			}
+			try {
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+				// @ts-ignore FIXME If anyone knows how to fix this...
+				mid(req, res, next, undefined);
+			} catch (e) {
+				next(e);
+			}
+		});
+	};
 }
 /**
  * Combine multiple middleware together.
@@ -66,12 +66,12 @@ function reduceMiddleware(
  * @return - Single combined middleware
  */
 function combineMiddleware(
-  middlewares: (RequestHandler | ErrorRequestHandler)[]
+	middlewares: (RequestHandler | ErrorRequestHandler)[]
 ): RequestHandler | ErrorRequestHandler {
-  return middlewares.reduce(
-    reduceMiddleware,
-    (_req: Request, _res: Response, next: NextFunction) => next()
-  );
+	return middlewares.reduce(
+		reduceMiddleware,
+		(_req: Request, _res: Response, next: NextFunction) => next()
+	);
 }
 
 /**
@@ -82,16 +82,16 @@ function combineMiddleware(
  * express middlewares.
  */
 export function chain<Req = NowRequest, Res = NowResponse>(
-  ...middlewares: (RequestHandler | ErrorRequestHandler)[]
+	...middlewares: (RequestHandler | ErrorRequestHandler)[]
 ): (fn: NowFunction<Req, Res>) => NowFunction<Req, Res> {
-  return function (fn: NowFunction<Req, Res>): NowFunction<Req, Res> {
-    return function (req: Req, res: Res): AsyncVoid {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-      // @ts-ignore Need to cast (and verify everything works) from a
-      // express.Request to a NowRequest
-      return combineMiddleware(middlewares)(req, res, () => {
-        fn(req, res);
-      });
-    };
-  };
+	return function (fn: NowFunction<Req, Res>): NowFunction<Req, Res> {
+		return function (req: Req, res: Res): AsyncVoid {
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-ignore Need to cast (and verify everything works) from a
+			// express.Request to a NowRequest
+			return combineMiddleware(middlewares)(req, res, () => {
+				fn(req, res) as void;
+			});
+		};
+	};
 }

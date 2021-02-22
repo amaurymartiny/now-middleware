@@ -1,7 +1,7 @@
-[![Actions Status](https://github.com/amaurymartiny/now-middleware/workflows/pr/badge.svg)](https://github.com/amaurymartiny/now-middleware/actions)
-[![npm (scoped)](https://img.shields.io/npm/v/@amaurymartiny/now-middleware.svg)](https://www.npmjs.com/package/@amaurymartiny/now-middleware)
-[![dependencies Status](https://david-dm.org/amaurymartiny/now-middleware/status.svg)](https://david-dm.org/amaurymartiny/now-middleware)
-[![Buy me a tree](https://img.shields.io/badge/Buy%20me%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://offset.earth/amaurymartiny)
+[![Actions Status](https://github.com/amaurym/now-middleware/workflows/pr/badge.svg)](https://github.com/amaurym/now-middleware/actions)
+[![npm (scoped)](https://img.shields.io/npm/v/@amaurym/now-middleware.svg)](https://www.npmjs.com/package/@amaurym/now-middleware)
+[![dependencies Status](https://david-dm.org/amaurym/now-middleware/status.svg)](https://david-dm.org/amaurym/now-middleware)
+[![Buy me a tree](https://img.shields.io/badge/Buy%20me%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://offset.earth/amaurym)
 
 <br /><br /><br />
 
@@ -13,7 +13,7 @@
 ## Installation
 
 ```bash
-yarn add @amaurymartiny/now-middleware
+yarn add @amaurym/now-middleware
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ yarn add @amaurymartiny/now-middleware
 The package exposes one `chain` function.
 
 ```typescript
-import { chain } from '@amaurymartiny/now-middleware';
+import { chain } from '@amaurym/now-middleware';
 import { NowRequest, NowResponse } from '@vercel/node';
 
 // Import a couple of Express middlewares
