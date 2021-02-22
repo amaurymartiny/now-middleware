@@ -1,6 +1,6 @@
 {
   "name": "@amaurym/now-middleware",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Amaury <amaurym10@protonmail.com>",
   "description": "Chain Express middlewares with ZEIT Now serverless functions",
   "files": [
