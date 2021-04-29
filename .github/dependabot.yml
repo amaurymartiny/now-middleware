@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "02:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: "@types/express"
+    versions:
+    - 4.17.11
+  - dependency-name: "@amaurymartiny/config"
+    versions:
+    - 1.3.4
