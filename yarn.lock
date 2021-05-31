@@ -790,9 +790,9 @@
     eslint-visitor-keys "^2.0.0"
 
 "@vercel/node@^1.6.1":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.10.0.tgz#98683c005da6f9ab0f21696409c520baffd4cb4a"
-  integrity sha512-11FIFoF4v9m/jAOSamwBDMsS2yIDa0fSnVhR70bbcUdBcu3BGGMCpg+jpA6rvkQSOa/WbTRvvu9hFh5bOsZxrw==
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-1.11.0.tgz#2c34e4cab9dfaf8a796a0b590b20d2f6cf222749"
+  integrity sha512-GmEUuOloy6Pdy5Qj5Zm7HmxcO/5VRLG99WUg15V7GD0fKq3sJtnCnzy4f1+9fpVbQGMefjy+pY1dWUhkB6YEGA==
   dependencies:
     "@types/node" "*"
     ts-node "8.9.1"
